@@ -66,5 +66,8 @@ elif user_input == 'move' :
 
         if user_input =='peer out':
             print('The man exits, leaving the door open.\nYou get out from under the bed and walk to the door.\nWhen you peek out, you notice a crowd of people running back and forth across the halls.\nYou also see a man sitting in a wheelchair by a broken window.')
+            print('The man gets up and walks away.\nYou run toward the window and climb out to freedom.')
 
         elif user_input == 'throw shoe':
+            print('You climb out from your hiding spot and chuck your shoe at the man.\nHe hunches down, appearing to be severely wounded.\nYou take a few steps toward him.\nBut, he recovers, turning around and kicking you.\nYour vision fades as he lands more blows.')
+            print('You are dead.')
