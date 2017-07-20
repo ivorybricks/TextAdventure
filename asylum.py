@@ -1,5 +1,8 @@
+import time
+
 start = '''
 You wake up in a pitch black room.
+You hear alarms blaring outside the room.
 Your head is throbbing, and you can't place
 who you are, or where you are.
 You become aware of the cold air enveloping you,
@@ -22,22 +25,26 @@ while done != True:
 
     if user_input == 'wait' :
         print('You wait, realizing that you are sitting on the floor.\nSuddenly, the lights flicker on, revealing a small, dingy room \nand a door in front of you.\nIt says PROPERTY OF WILLIAMSBURG INSANE ASYLUM.')
+        time.sleep(3)
         print('Will you look around your room or escape out the door?\n(look around OR escape)')
         user_input = input()
 
         if user_input == 'look around' :
             print('You explore the cramped room. You find a picture of two people on the desk to your right.\nThere is a wardrobe by the desk. You open it and see a couple changes of clothes.\nAfter closing the wardrobe, you turn around and see a bed.\nThere isz a tattered journal on the bed.')
+            time.sleep(3)
             print('Do you look through the journal, or escape out the door?\n(look OR escape)')
             user_input = input()
 
             if user_input == 'look' :
                 print('You take the journal and open it, but the handwriting is unintelligible.\nBefore you can flip through the pages, a man bursts in through the door\nand throws something at you. Your vision fades as you gasp in pain.')
+                time.sleep(3)
                 print('You are dead.')
 
                 done = True
 
             elif user_input == 'escape':
                 print('You open the heavy door to go out\nand find yourself in a swarm of people running across the halls.\nIn the midst of the crowd, you spot a broken window.')
+                time.sleep(3)
                 print('Do you walk or run toward the window to get out?\n(walk OR run)')
                 user_input = input()
 
@@ -54,6 +61,7 @@ while done != True:
 
         elif user_input == 'escape':
             print('You open the door and run out in a sluggish gait.\nYou see a broken window and realize that you can escape.')
+            time.sleep(3)
             print('Do you run, or walk to escape?\n(run OR walk)')
             user_input = input()
 
@@ -63,34 +71,41 @@ while done != True:
 
             if user_input == 'run':
                 print('You run to the window until you are within arm\'s reach.\nHowever, a man sitting in a wheelchair to your right\ngets up and runs toward you.\nHe tackles and strangles you as you struggle to break free.')
+                time.sleep(3)
                 print('You are dead.')
                 done = True
 
     elif user_input == 'move' :
         print('You move around and feel your arm hit something hard and cold.\nYou run your hands along the object and realize that it is a bed.\nSuddenly, you hear footsteps nearing your door.')
+        time.sleep(3)
         print('Do you hide under the bed, or sit still and surrender yourself?\n(hide OR surrender)')
         user_input = input()
 
         if user_input == 'surrender' :
             print('You surrender.\nYou hear the door open and the lights turn on, revealing an unkempt man.\nHe rushes toward you and strikes you in the head\nbefore you can let out a scream.')
+            time.sleep(3)
             print('You are dead.')
             done = True
 
         elif user_input == 'hide':
             print('You crawl underneath the bed and hold your breath.\nYou hear the door squeak open and hear the footsteps in the room.\nFrom beneath the bed, you see the lights turn on, revealing a pair of shoes which belong to a man.\nThe shoes shuffle around the room before they begin to head back out the door,\nwhich says PROPERTY OF WILLIAMSBURG INSANE ASYLUM.')
+            time.sleep(3)
             print('Do you take off your shoe and climb out to throw it at him, or wait for him to walk out so you can peer out the door?\n(throw shoe OR peer out)')
             user_input = input()
 
             if user_input =='peer out':
                 print('The man exits, leaving the door open.\nYou get out from under the bed and walk to the door.\nWhen you peek out, you notice a crowd of people running back and forth across the halls.\nYou also see a man sitting in a wheelchair by a broken window.')
+                time.sleep(3)
                 print('The man gets up and walks away.\nYou run toward the window and climb out to freedom.')
                 done = True
 
             elif user_input == 'throw shoe':
                 print('You climb out from your hiding spot and chuck your shoe at the man.\nHe hunches down, appearing to be severely wounded.\nYou take a few steps toward him.\nBut, he recovers, turning around and kicking you.\nYour vision fades as he lands more blows.')
+                time.sleep(3)
                 print('You are dead.')
                 done = True
 
     else :
         tryAgain()
+        time.sleep(3)
         done = False
