@@ -30,7 +30,7 @@ while done != True:
         user_input = input()
 
         if user_input == 'look around' :
-            print('You explore the cramped room. You find a picture of two people on the desk to your right.\nThere is a wardrobe by the desk. You open it and see a couple changes of clothes.\nAfter closing the wardrobe, you turn around and see a bed.\nThere isz a tattered journal on the bed.')
+            print('You explore the cramped room. You find a picture of two people on the desk to your right.\nThere is a wardrobe by the desk. You open it and see a couple changes of clothes.\nAfter closing the wardrobe, you turn around and see a bed.\nThere is a tattered journal on the bed.')
             time.sleep(3)
             print('Do you look through the journal, or escape out the door?\n(look OR escape)')
             user_input = input()
