@@ -1,5 +1,6 @@
 import time
 
+# intro message
 start = '''
 You wake up in a pitch black room.
 Your head is throbbing, and you can't place
@@ -7,7 +8,9 @@ who you are, or where you are.
 You become aware of the cold air enveloping you,
 sending shivers up your spine.
 '''
-def tryAgain() :
+
+# prompt for incorrect user inputs
+    def tryAgain() :
     print('Incorrect input. Try again.')
     time.sleep(3)
 
@@ -18,6 +21,7 @@ done = False
 
 while done != True:
 
+    
     time.sleep(3)
     print('\nYou have a choice. Will you wait for something to happen, or will you move around to see if you can find something?\n(wait OR move)')
     user_input = input()
